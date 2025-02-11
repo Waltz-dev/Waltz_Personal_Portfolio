@@ -1,0 +1,76 @@
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (max-width:599px)  { 
+    .work-exp-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 10%;
+        box-sizing: border-box;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-color: var(--blue);
+    }
+    .work-exp-title{
+        font-size: var(--titleFontSize);
+        font-weight: bolder;
+        color: var(--white);
+    }
+    .work-exp-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media (min-width:600px)  { 
+    .work-exp-div{
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        padding-top: 12%;
+        padding-bottom: 12%;
+        box-sizing: border-box;
+        padding-left: 4%;
+        padding-right: 4%;
+        background-color: var(--blue);
+    }
+    .work-exp-title{
+        font-size: var(--mdTitleFontSize);
+        font-weight: bolder;
+        text-align: center;
+        height: 100%;
+        width: 50%;
+        position: sticky;
+        top: 10%;
+        overflow: hidden;
+        color: var(--white);
+        padding: 3%;
+    }
+    .work-exp-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px)  {  
+
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { 
+
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px){
+
+}

@@ -1,0 +1,106 @@
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (max-width:599px)  { 
+    .home-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .intro-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    .name-p{
+        font-size: var(--titleFontSize);
+        margin: 1%;
+        animation: slide-in-bottom 3s cubic-bezier(0.85, 0, 0.15, 1) 0s 1 normal forwards;
+    }
+    .img-div{
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        clip-path: circle(50% at 50% 50%);
+        animation: scale-up-center 3s cubic-bezier(0.85, 0, 0.15, 1) 0s 1 normal forwards;
+    }
+    .skill-p{
+        color: var(--darkGray);
+        font-size: var(--semiTitleFontSize);
+        font-weight: bolder;
+        margin: 1%;
+        animation: slide-in-bottom 3.5s cubic-bezier(0.85, 0, 0.15, 1) 0s 1 normal forwards;
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media (min-width:600px)  { 
+    .home-div{
+        display: flex;
+        justify-content: flex-start;
+        height: 89vh;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .intro-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        order: 1;
+    }
+    .name-p{
+        font-size: clamp(2.5rem, 0.6219rem + 5vw, 3.125rem);
+        text-align: center;
+        margin: 0;
+        animation: slide-in-left 3s cubic-bezier(0.85, 0, 0.15, 1) 0s 1 normal forwards;
+    }
+    .img-div{
+        display: flex;
+        justify-content: center;    
+        align-self: center;
+        margin-bottom: 10%;
+        height: 50%;
+        /* min-width: 403px; */
+        order: 2;
+        /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+        animation: scale-up-center 3s cubic-bezier(0.85, 0, 0.15, 1) 0s 1 normal forwards;
+    }
+    .img-div img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .skill-p{
+        color: var(--darkGray);
+        font-size: clamp(1.25rem, -0.6281rem + 5vw, 1.875rem);
+        font-weight: bolder;
+        margin: 1%;
+        animation: slide-in-left 3.8s cubic-bezier(0.85, 0, 0.15, 1) 0s 1 normal forwards;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px)  {  
+
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { 
+
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px){
+
+}
+

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waltz - Dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/navigation_bar.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/home.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/about.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/skills.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/workExp.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/project.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/footer.css" /> 
+</head>
+<body>
+    <!-- ================== -->
+    <!--   NAVIGATION BAR   -->
+    <!-- ================== -->
+    <div class="nav-bar-div">
+        <p class="nav-title">Waltz - Dev</p>
+        <label class="hamburger">
+        <input type="checkbox" id="nav-check" onclick="openHamburger()" readonly/>
+        <svg viewBox="0 0 32 32">
+            <path
+                class="line line-top-bottom"
+                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+        </label>
+        <div class="nav-card-container">
+            <div class="nav-card-large"><a href="#" onclick="removeCard()">🏠 Home</a></div>
+            <div class="nav-card-large"><a href="#about" onclick="removeCard()">ℹ️ About</a></div>
+            <div class="nav-card-large"><a href="#skills" onclick="removeCard()">👨‍💻 Skills</a></div>
+            <div class="nav-card-large" style="font-size: 13px;"><a href="#work" onclick="removeCard()">💼 Experience</a></div>
+            <div class="nav-card-large"><a href="#project" onclick="removeCard()">💻 Projects</a></div>
+            <div class="nav-card-large"><a href="#contact" onclick="removeCard()">📞 Contacts</a></div>
+        </div>
+    </div>
+    <div class="nav-card nav-shadow" id="navCard" style="display: none;">
+        <a href="#" onclick="removeCard()">🏠 Home</a>
+        <hr style="height: 5px; color: #ffff; background-color: #ffff; border-style:ridge; border-radius: 10px; width: 100%; margin: 0">
+        <a href="#about" onclick="removeCard()">ℹ️ About</a>
+        <hr style="height: 5px; color: #ffff; background-color: #ffff; border-style:ridge; border-radius: 10px; width: 100%; margin: 0">
+        <a href="#skills" onclick="removeCard()">👨‍💻 Skills</a>
+        <hr style="height: 5px; color: #ffff; background-color: #ffff; border-style:ridge; border-radius: 10px; width: 100%; margin: 0">
+        <a href="#work" onclick="removeCard()">💼 Work Experience</a>
+        <hr style="height: 5px; color: #ffff; background-color: #ffff; border-style:ridge; border-radius: 10px; width: 100%; margin: 0">
+        <a href="#project" onclick="removeCard()">💻 Projects</a>
+        <hr style="height: 5px; color: #ffff; background-color: #ffff; border-style:ridge; border-radius: 10px; width: 100%; margin: 0">
+        <a href="#contact" onclick="removeCard()">📞 Contacts</a>
+    </div>
+
+    <!-- ================== -->
+    <!--        HOME        -->
+    <!-- ================== -->
+    <div class="home-div">
+        <div class="img-div">
+            <img src="images/waltz_remove_bg.png" alt="">
+        </div>
+        <div class="intro-div">
+            <p class="name-p">👋 Hi! I'm <span style="color: #65c9ff; font-weight: bolder;">Walter</span></p>
+            <p class="skill-p aria-label="Full Stack Web Developer">
+                <span class="typewriter thick"></span>Web Developer
+            </p>
+        </div>
+    </div>
+    <!-- ================== -->
+    <!--        ABOUT       -->
+    <!-- ================== -->
+    <div class="about-div" id="about">
+        <p class="about-title">ℹ️ About</p>
+        <p class="about-p">I'm Walter Jr. Motilla Omaña from the philippines, and I am a passionate web developer with a keen interest in creating innovative and user-friendly solutions. With 2 years of experience in the industry, I have honed my skills in front-end development and back-end development.</p>
+    </div>
+    <!-- ================== -->
+    <!--        Skills      -->
+    <!-- ================== -->
+    <div class="skills-div" id="skills">
+        <div class="skills-title-div">
+            <p>👨‍💻 Skills</p>
+        </div>
+        <div class="skills-list">
+            <div class="card">
+                <p class="title">HTML</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">CSS</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">Javascript</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">Vue JS</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">React JS</p>
+                <p class="subtitle">3 Months Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">PHP</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">Laravel</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">Node JS</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">MySQL</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">GIT</p>
+                <p class="subtitle">2 Years Experience</p>
+            </div>
+            <div class="card">
+                <p class="title">Mobile Responsive</p>
+                <p class="subtitle">1 Year Experience</p>
+            </div>
+        </div>
+    </div>
+    <!-- ================== -->
+    <!--   Work Experience  -->
+    <!-- ================== -->
+    <div class="work-exp-div" id="work">
+        <div class="work-exp-title">
+            <p>💼 Work Experience</p>
+        </div>
+        <div class="work-exp-list">
+            <div class="card" style="background-color: white;">
+                <p class="title" style="color: black;">HRD Singapore Pte. Ltd.</p>
+                <p class="subtitle" style="color: black;">Full Stack Web Developer</p>
+                <p class="subtitle" style="color: black;">2022 - Current</p>
+            </div>
+            <div class="card" style="background-color: white;">
+                <p class="title" style="color: black;">Wukong Singapore Pte. Ltd</p>
+                <p class="subtitle" style="color: black;">Production Staff</p>
+                <p class="subtitle" style="color: black;">2020 - 2022</p>
+            </div>
+            <div class="card" style="background-color: white;">
+                <p class="title" style="color: black;">SCAD Service Pte. Ltd</p>
+                <p class="subtitle" style="color: black;">Production Staff</p>
+                <p class="subtitle" style="color: black;">5 months</p>
+            </div>
+            <div class="card" style="background-color: white;">
+                <p class="title" style="color: black;">House Technology Industry Pte. Ltd</p>
+                <p class="subtitle" style="color: black;">Production Staff</p>
+                <p class="subtitle" style="color: black;">5 months</p>
+            </div>
+        </div>
+    </div>
+    <!-- ================== -->
+    <!--      Projects      -->
+    <!-- ================== -->
+    <div class="project-div" id="project">
+        <div class="project-title">
+            <p>💻 Projects</p>
+        </div>
+        <div class="project-list">
+            <div class="card">
+                <p class="title">Shipment Management System Web</p>
+                <p class="subtitle">In House Web Project</p>
+                <p class="subtitle">Vue JS and Laravel</p>
+            </div>
+            <div class="card">
+                <p class="title">Logistics Export System Web</p>
+                <p class="subtitle">In House Web Project</p>
+                <p class="subtitle">Vue JS and Laravel</p>
+            </div>
+            <div class="card">
+                <p class="title">SE Monitoring Web</p>
+                <p class="subtitle">In House Web Project</p>
+                <p class="subtitle">Vue JS and Laravel</p>
+            </div>
+        </div>
+    </div>
+    <!-- ================== -->
+    <!--       Footer       -->
+    <!-- ================== -->
+    <div class="footer-div" id="contact">
+        <div class="Find-me-div">
+            <p>🔍 Find me</p>
+        </div>
+        <div class="contact-div">
+            <p>
+                <span class="mdi mdi-facebook logos"></span>
+                <a href="https://www.facebook.com/Sung-Ha-Jun.Genshin" target=”_blank”>Facebook</a>
+            </p>
+            <p>
+                <span class="mdi mdi-gmail logos"></span>
+                <a href="mailto:omanawalterjr@gmail.com" target=”_blank”>Gmail</a>
+            </p>
+            <p>
+                <span class="mdi mdi-github logos"></span>
+                <a href="https://www.github.com/Waltz-Dev" target=”_blank”>Github</a>
+            </p>
+            <p>
+                <span class="mdi mdi-linkedin logos"></span>
+                <a href="https://www.linkedin.com/in/walter-jr-omaña" target=”_blank”>LinkedIn</a>
+            </p>
+        </div>
+        <hr class="hr-design">
+        <div class="copyright-div">
+            <p>Copyright © 2025 Waltz - Dev</p>
+        </div>
+    </div>
+    <script src='./main.js' type="text/javascript"></script>
+</body>
+</html>
